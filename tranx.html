@@ -91,9 +91,9 @@
 
 <body data-background-color="dark">
   <div id="app">
-    <script>
+    <!-- <script>
       {tawk to codess }	
-    </script>
+    </script> -->
     <div>
       <div class="wrapper">
         <div class="main-header">
@@ -252,12 +252,12 @@
                   </a>
                 </li>
 
-                <li class="nav-item ">
+                <!-- <li class="nav-item ">
                   <a href="profit.html">
                     <i class="fa fa-signal " aria-hidden="true"></i>
                     <p>Profit Record</p>
                   </a>
-                </li>
+                </li> -->
                 <li class="nav-item active">
                   <a href="/tranx.html">
                     <i class="fa fa-briefcase " aria-hidden="true"></i>
@@ -267,12 +267,12 @@
 
 
                 <li class="nav-item  ">
-                  <a data-toggle="collapse" href="#mpack">
+                  <a href="https://platonictrade.com/account/dashboard/buy-plan">
                     <i class="fas fa-cubes"></i>
-                    <p>Pool Trading</p>
-                    <span class="caret"></span>
+                    <p>Trading Plans</p>
+                    <!-- <span class="caret"></span> -->
                   </a>
-                  <div class="collapse" id="mpack">
+                  <!-- <div class="collapse" id="mpack">
                     <ul class="nav nav-collapse">
                       <li>
                         <a href="/buyplans.html">
@@ -285,7 +285,7 @@
                         </a>
                       </li>
                     </ul>
-                  </div>
+                  </div> -->
                 </li>
                 <li class="nav-item ">
                   <a href="/refer.html">
@@ -317,19 +317,23 @@
               <div class="mb-5 row">
                 <div class="col text-center card p-4 bg-dark">
 
+                  <!-- THE NAVIGATION SECTION START HERE -->
+
                   <nav>
                     <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
 
-                      <h4 class="pt-3 nav-item nav-link active " id="nav-home-tab" data-toggle="tab" href="#1"
-                        role="tab" aria-controls="nav-home" aria-selected="true"> Deposits</h4>
+                      <h2 class="pt-3 nav-item nav-link active " id="nav-home-tab" data-toggle="tab" href="#1"
+                        role="tab" aria-controls="nav-home" aria-selected="true"> <b>Transaction History</b></h2>
 
-                      <h4 class="pt-3 nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#2" role="tab"
+                      <!-- <h4 class="pt-3 nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#2" role="tab"
                         aria-controls="nav-profile" aria-selected="false">Withdrawals</h4>
 
                       <h4 class="pt-3 nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#3" role="tab"
-                        aria-controls="nav-contact" aria-selected="false">Others</h4>
+                        aria-controls="nav-contact" aria-selected="false">Others</h4> -->
                     </div>
                   </nav>
+
+                  <!-- THE NAVIGATION SECTION ENDS HERE -->
 
                   <div class="px-3 py-3 tab-content px-sm-0" id="nav-tabContent">
 
@@ -341,19 +345,33 @@
                           <thead>
                             <tr>
                               <th>Amount</th>
-                              <th>Payment mode</th>
-                              <th>Status</th>
+                              <th>Name</th>
+                              <th>Transaction Reference</th>
                               <th>Date created</th>
                             </tr>
                           </thead>
-                          <tbody>
+                          <tbody id="tb1">
+                            <div id="tb">
+                              <!-- <tr>
+                                <td>$10000</td>
+                                <td>Bitcoin</td>
+                                <td>Completed</td>
+                                <td>Tuesday</td>
+                              </tr>
+                              <tr>
+                                <td>$10000</td>
+                                <td>Bitcoin</td>
+                                <td>Completed</td>
+                                <td>Tuesday</td>
+                              </tr> -->
+                            </div>
                           </tbody>
                         </table>
                       </div>
                     </div>
 
 
-                    <div class="tab-pane fade p-3 bg-dark" id="2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <!-- <div class="tab-pane fade p-3 bg-dark" id="2" role="tabpanel" aria-labelledby="nav-profile-tab">
                       <div class="bs-example widget-shadow table-responsive" data-example-id="hoverable-table">
                         <table id="UserTable" class="UserTable table table-hover text-light">
                           <thead>
@@ -369,10 +387,10 @@
                           </tbody>
                         </table>
                       </div>
-                    </div>
+                    </div> -->
 
 
-                    <div class="tab-pane fade p-3 bg-dark" id="3" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <!-- <div class="tab-pane fade p-3 bg-dark" id="3" role="tabpanel" aria-labelledby="nav-contact-tab">
                       <div class="bs-example widget-shadow table-responsive" data-example-id="hoverable-table">
                         <table id="UserTable" class="UserTable table table-hover text-light">
                           <thead>
@@ -388,7 +406,7 @@
                         </table>
 
                       </div>
-                    </div>
+                    </div> -->
 
                   </div>
 
@@ -465,7 +483,7 @@
             </div>
           </div>
           <!-- /plans Modal -->
-          <script type="text/javascript">
+          <!-- <script type="text/javascript">
             function calcAmount(sub) {
               if (sub.value == "Quaterly") {
                 var amount = document.getElementById('amount');
@@ -484,7 +502,7 @@
                 amountpay.value = '30';
               }
             }
-          </script>
+          </script> -->
           <footer class="footer bg-dark text-light">
             <div class="container-fluid">
               <div class="text-center row copyright text-align-center">
@@ -496,10 +514,11 @@
       </div>
     </div>
     <script defer="true" src="data.js"></script>
+    <script defer="true" src="tranx.js"></script>
     <script src="./siteName.js"></script>
     <!-- Livewire Scripts -->
 
-    <script src="js/livewire.js" data-turbo-eval="false" data-turbolinks-eval="false"></script>
+    <!-- <script src="js/livewire.js" data-turbo-eval="false" data-turbolinks-eval="false"></script>
     <script data-turbo-eval="false" data-turbolinks-eval="false">
       if (window.livewire) {
         console.warn('Livewire: It looks like Livewire\'s @livewireScripts JavaScript assets have already been loaded. Make sure you aren\'t loading them twice.')
@@ -545,7 +564,7 @@
           started = true;
         }
       });
-    </script>
+    </script> -->
     <!--   Core JS Files   -->
     <script src="js/jquery.min.js"></script>
 
@@ -563,7 +582,7 @@
     <!-- Bootstrap Notify -->
     <script src="js/bootstrap-notify.min.js"></script>
 
-    <script type="text/javascript" src="js/datatables.min.js">
+    <!-- <script type="text/javascript" src="js/datatables.min.js"> -->
     </script>
 
     <script src="js/atlantis.min.js"></script>
@@ -571,14 +590,14 @@
     <script type="text/javascript" src="js/element.js">
     </script>
     <script src="js/customs.js"></script>
-    <script>
+    <!-- <script>
       $(document).ready(function () {
         $(".dataTables_length select").addClass("bg-dark text-light");
         $(".dataTables_filter input").addClass("bg-dark text-light");
         $(".dataTables_length select").addClass("bg-dark text-light");
         $(".dataTables_filter input").addClass("bg-dark text-light");
       });
-    </script>
+    </script> -->
 
   </div>
 </body>
