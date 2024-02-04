@@ -248,7 +248,7 @@ async function send () {
       investmentBalance: 0,
     };
 
-    const url = 'https://mich-backend.onrender.com/api/user/transfer/'
+    const url = 'https://chika-backend.onrender.com/api/user/transfer/'
 
     const request = await fetch(url, {
         method: 'PUT',

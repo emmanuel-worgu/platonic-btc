@@ -54,7 +54,7 @@ async function register () {
 
       // const url = 'https://crypto-backend2.herokuapp.com/api/user/register/';
 
-      const url = 'https://mich-backend.onrender.com/api/user/register';
+      const url = 'https://chika-backend.onrender.com/api/user/register';
 
       const body = {
         name,
