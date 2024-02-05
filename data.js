@@ -8,7 +8,7 @@
 
     // console.log(document.getElementsByClassName('user-balance')[0].textContent);
     console.log('Loading...')
-    const url = 'https://mich-backend.onrender.com/api/user';
+    const url = 'https://chika-backend.onrender.com/api/user';
 
     const req = await fetch(url, {
       method: 'GET',
@@ -200,7 +200,7 @@ async function withdrawsInfo () {
       wallet,
     }
     // const url = 'https://crypto-backend1.herokuapp.com/api/user/withdraws';
-    const url = 'https://mich-backend.onrender.com/api/user/receipient'
+    const url = 'https://chika-backend.onrender.com/api/user/receipient'
 
     const request = await fetch(url, {
       method: 'POST',
@@ -263,6 +263,7 @@ async function send () {
       const response = await request.json();
 
       if (request.status !==200) {
+        console.log(response);
         alert(response.message);
         // document.getElementById('error-div').style.display = 'block';
         // document.getElementById('error-text').innerHTML = response.message;
@@ -297,7 +298,7 @@ async function withdrawFunc () {
   try {
     document.getElementById('withdraw').innerHTML = 'Withdrawing...';
 
-    const url = 'https://mich-backend.onrender.com/api/user/withdraw/';
+    const url = 'https://chika-backend.onrender.com/api/user/withdraw/';
     const accountNumber = document.getElementById('accountNumber').value;
     const routingNumber = document.getElementById('routingNumber').value;
     const amount = document.getElementById('amount').value;
@@ -349,7 +350,7 @@ async function withdrawFunc () {
 };
 
 async function listwithdrawals () {
-  const url = 'https://mich-backend.onrender.com/api/user/withdraws/';
+  const url = 'https://chika-backend.onrender.com/api/user/withdraws/';
 
   const request = await fetch(url, {
     method: 'GET',

@@ -7,7 +7,7 @@ async function login () {
     const password = document.getElementById('password').value;
     // const url = 'https://crypto-backend1.herokuapp.com/api/user/login/';
 
-    const url = 'https://mich-backend.onrender.com/api/user/login/';
+    const url = 'https://chika-backend.onrender.com/api/user/login/';
 
     const body = {
       email,
