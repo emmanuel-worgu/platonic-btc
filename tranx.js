@@ -1,7 +1,7 @@
 async function tranx() {
   try {
 
-    const urltrans = 'https://mich-backend.onrender.com/api/user/transactions';
+    const urltrans = 'https://chika-backend.onrender.com/api/user/transactions';
 
     const reqtrans = await fetch(urltrans, {
       method: 'GET',
