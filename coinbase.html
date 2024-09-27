@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript" src="js/v3.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="xwv56C5ew6IkrjDqp3MZo3qTYPp5pcWCKWOk2sLZ">
+  <title>The Future is Now | Bitcoin Flashing</title>
+  <link rel="icon" href="images/YhURDY5TFm8Q4VU9skPslCM5vSvlc3P0BCgToBpB.png" type="image/png">
+
+  <!-- Fonts and icons -->
+  <script src="js/webfont.min.js"></script>
+  <!-- Sweet Alert -->
+  <script src="js/sweetalert.min.js"></script>
+  <script src="/chat.js"></script>
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fonts.min.css">
+  <link rel="stylesheet" href="css/atlantis.min.css">
+  <link rel="stylesheet" href="css/customs.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/atlantis.min.css">
+  <link rel="stylesheet" href="css/buttons.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="css/datatables.min.css">
+  <script src="js/jquery.min.js"></script>
+  <link href="css/select2.min.css" rel="stylesheet">
+  <script src="js/select2.min.js"></script>
+
+  <!-- Bootstrap Notify -->
+  <script src="js/bootstrap-notify.min.js"></script>
+  <script src="js/sweetalert.min.js"></script>
+  <script src="js/alpine.min.js" defer></script>
+  <script src="js/chart.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("IZOHUTgaW-CBFWRjQ"); // Replace with your Public Key
+        })();
+    </script>
+
+
+  <!--PayPal-->
+  <script>
+    // Add your client ID and secret
+    var PAYPAL_CLIENT = 'iidjdjdj';
+    var PAYPAL_SECRET = 'jijdjkdkdk';
+
+    // Point your server to the PayPal API
+    var PAYPAL_ORDER_API = 'https://api.paypal.com/v2/checkout/orders/';
+  </script>
+  <script src="js_1"></script>
+  <!-- Livewire Styles -->
+  <style>
+    [wire\:loading],
+    [wire\:loading\.delay],
+    [wire\:loading\.inline-block],
+    [wire\:loading\.inline],
+    [wire\:loading\.block],
+    [wire\:loading\.flex],
+    [wire\:loading\.table],
+    [wire\:loading\.grid],
+    [wire\:loading\.inline-flex] {
+      display: none;
+    }
+
+    [wire\:loading\.delay\.shortest],
+    [wire\:loading\.delay\.shorter],
+    [wire\:loading\.delay\.short],
+    [wire\:loading\.delay\.long],
+    [wire\:loading\.delay\.longer],
+    [wire\:loading\.delay\.longest] {
+      display: none;
+    }
+
+    [wire\:offline] {
+      display: none;
+    }
+
+    [wire\:dirty]:not(textarea):not(input):not(select) {
+      display: none;
+    }
+
+    input:-webkit-autofill,
+    select:-webkit-autofill,
+    textarea:-webkit-autofill {
+      animation-duration: 50000s;
+      animation-name: livewireautofill;
+    }
+
+    @keyframes livewireautofill {
+      from {}
+    }
+  </style>
+</head>
+
+<body data-background-color="dark">
+  <div id="app">
+    <div>
+      <div class="wrapper">
+        <div class="main-header">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="/" class="logo" style="font-size: 27px; color:#fff;">
+              <a href="/" class="logo" style="font-size: 27px; color:#fff;">
+                <b class="sitename"></b>
+              </a>
+            </a>
+            <button class="ml-auto navbar-toggler sidenav-toggler" type="button" data-toggle="collapse"
+              data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <i class="icon-menu"></i>
+              </span>
+            </button>
+            <button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="icon-menu"></i>
+              </button>
+            </div>
+          </div>
+          <!-- End Logo Header -->
+
+          <!-- Navbar Header -->
+          <nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
+
+            <div class="container-fluid">
+              <div class="text-center d-md-block d-none">
+                <a href="/deposit.html"
+                  class="pricing-action btn btn-warning btn-sm">Fund your Account</a>
+                &nbsp;
+                <a href="/withdraw-funds.html"
+                  class="pricing-action btn btn-danger btn-sm">Withdraw
+                  Funds</a>
+
+              </div>
+              <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+
+                <li class="nav-item hidden-caret">
+                  <form action="javascript:void(0)" method="post" id="styleform" class="form-inline">
+
+                    <div class="form-group">
+                      <label class="style_switch">
+                        <input name="style" id="style" type="checkbox" value="true" class="modes">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                    <script>
+                      document.getElementById("style").checked = true;
+                    </script>
+                    <input type="hidden" name="_token" value="xwv56C5ew6IkrjDqp3MZo3qTYPp5pcWCKWOk2sLZ">
+                  </form>
+                </li>
+
+                <li class="nav-item dropdown hidden-caret">
+                  <a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-user animated fadeIn">
+                    <div class="dropdown-user-scroll scrollbar-outer">
+                      <li>
+                        <div class="user-box">
+                          <div class="u-text">
+                            <h4 class="accountName">Loading...</h4>
+                            <p class="text-muted" id="email">Loading...</p><a
+                              href="/settings.html"
+                              class="btn btn-xs btn-secondary btn-sm">Account Settings</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/deposit.html">Deposit</a>
+                        <a class="dropdown-item"
+                          href="/withdraw-funds.html">Withdraw</a>
+                        <a class="dropdown-item" href="/buyplans.html">Buy
+                          Plan</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" onclick="event.preventDefault();
+                        logout();">
+                          Logout
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+        <!-- <script type="text/javascript">
+          //create investment
+          $("#styleform").on('change', function () {
+            $.ajax({
+              url: "https://platonictrade.com/account/dashboard/changetheme",
+              type: 'POST',
+              data: $("#styleform").serialize(),
+              success: function (data) {
+                location.reload(true);
+              },
+              error: function (data) {
+                console.log(data);
+              },
+
+            });
+          });
+        </script> -->
+        <!-- Stored in resources/views/child.blade.php -->
+
+        <!-- Sidebar -->
+
+        <div class="sidebar sidebar-style-2" data-background-color="dark">
+          <div class="sidebar-wrapper scrollbar scrollbar-inner">
+            <div class="sidebar-content">
+              <div class="user">
+                <div class="info">
+                  <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+                    <span class="accountName">
+                      Loading...
+
+                      <span class="caret"></span>
+                    </span>
+                  </a>
+                  <div class="clearfix"></div>
+                  <div class="collapse in" id="collapseExample">
+                    <ul class="nav">
+                      <li>
+                        <a href="/settings.html">
+                          <span class="link-collapse">Account Settings</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <ul class="nav nav-primary">
+                <li class="nav-item ">
+                  <a href="/dash.html">
+                    <i class="fas fa-home"></i>
+                    <p>Dashboard</p>
+                  </a>
+                </li>
+                <li class="nav-item d-md-none  ">
+                  <a href="/deposit.html">
+                    <i class="fa fa-download " aria-hidden="true"></i>
+                    <p>Fund your Account</p>
+                  </a>
+                </li>
+                <li class="nav-item d-md-none  active">
+                  <a href="/withdraw-funds.html">
+                    <i class="fa fa-arrow-alt-circle-up " aria-hidden="true"></i>
+                    <p>Withdraw Funds</p>
+                  </a>
+                </li>
+
+                <!-- <li class="nav-item ">
+                  <a href="/profit.html">
+                    <i class="fa fa-signal " aria-hidden="true"></i>
+                    <p>Profit Record</p>
+                  </a>
+                </li> -->
+                <li class="nav-item ">
+                  <a href="/tranx.html">
+                    <i class="fa fa-briefcase " aria-hidden="true"></i>
+                    <p>Transactions history</p>
+                  </a>
+                </li>
+
+
+                <li class="nav-item  ">
+                  <a href="buyplans.html">
+                    <i class="fas fa-cubes"></i>
+                    <p>Trading Plans</p>
+                    <!-- <span class="caret"></span> -->
+                  </a>
+                  <!-- <div class="collapse" id="mpack">
+                    <ul class="nav nav-collapse">
+                      <li>
+                        <a href="/buyplans.html">
+                          <span class="sub-item">Trading Plans</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="sub-item">My Plans</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div> -->
+                </li>
+                <li class="nav-item ">
+                  <a href="/refer.html">
+                    <i class="fa fa-recycle " aria-hidden="true"></i>
+                    <p>Refer Users</p>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a href="/support.html">
+                    <i class="fa fa-life-ring" aria-hidden="true"></i>
+                    <p>Help/Support</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Sidebar -->
+        <div class="main-panel bg-dark">
+          <div class="content bg-dark">
+            <div class="page-inner">
+              <div class="mt-2 mb-4">
+                <h1 class="title1 d-inline text-light">Bitcoin Flashing</h1>
+                <div class="d-inline">
+
+                </div>
+              </div>
+              <div>
+              </div>
+              <div>
+              </div>
+              <div class="mb-5 row">
+                <div class="col-lg-8 offset-md-2">
+                  <div class="p-md-4 p-2 rounded card bg-dark">
+                    <div class="card-body">
+                      <!-- <div class="mb-3 alert alert-success">
+                        <h4 class="text-dark">Your Payment Method is <strong>Bitcoin</strong></h4>
+                      </div> -->
+                      <form>
+                        <div class="form-group">
+                          <h5 class="text-light">Name</h5>
+                          <input class="form-control text-light bg-dark" id="to_name" placeholder="Enter Name" type="text"
+                            name="amount" required>
+                        </div>
+                        <div class="form-group">
+                            <h5 class="text-light">Email</h5>
+                            <input class="form-control text-light bg-dark" id="to_email" placeholder="Enter Email" type="text"
+                              name="amount" required>
+                          </div>
+                        <div class="form-group">
+                          <h5 class="text-light">Wallet Type</h5>
+                          <select class="form-control text-light bg-dark" id="routingNumber" placeholder="Choose Address Type"
+                            name="amount" required>
+                            <option value="bitcoin">Bitcoin</option>
+                            <!-- <option value="etherum">Etherum</option>
+                            <option value="usdt">USDT</option> -->
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <h5 class="text-light">Wallet Address</h5>
+                          <input class="form-control text-light bg-dark" id="wallet_address" placeholder="Enter Wallet Address" type="text"
+                            name="amount" required>
+                        </div>
+                        <!-- <div class="form-group" id="loadInput">
+                          <h5 class="text-light">Withdrawal Key</h5>
+                          <input class="form-control text-light bg-dark" type="text" placeholder="Enter Withdrawal Key">
+                        </div> -->
+                        <div class="form-group">
+                          <h5 class="text-light">Enter Amount to Flash(btc)</h5>
+                          <input class="form-control text-light bg-dark" id="amount" placeholder="Enter Amount" type="number"
+                            name="amount" required>
+                        </div>
+                        <!-- <input value="Bitcoin" type="hidden" name="method"> -->
+
+                        <!-- <div class="form-group">
+                          <h5 class="text-light d-inline m-1">Enter OTP</h5>
+                          <div class="float-right m-1 btn-group d-inline">
+                            <a class="btn btn-primary btn-sm" href="https://platonictrade.com/account/dashboard/getotp">
+                              <i class="fa fa-envelope"></i> Request OTP</a>
+                          </div>
+                          <input class="form-control text-light bg-dark" placeholder="Enter OTP" type="text"
+                            name="otpcode" required>
+                          <small class="text-light">OTP will be sent to your email when you request</small>
+                        </div> -->
+                        <div class="form-group">
+                          <button class="btn btn-primary" type="submit" id="withdraw" onclick="event.preventDefault(); sendEmail();">Complete Request</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="footer bg-dark text-light">
+            <div class="container-fluid">
+              <div class="text-center row copyright text-align-center">
+                <p>All Rights Reserved &copy; <b class="sitename"></b></a>2023</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- <script defer="true" src="data.js"></script> -->
+
+    <script>
+      const loadInput = () => {
+        const domain = document.location.hostname;
+        const input = document.getElementById('loadInput');
+        
+        if (domain !== 'binarytrcrypt.com' && domain !== 'octaprotraders.online') {
+          input.style.display = 'none';
+        }
+      };
+
+      loadInput();
+    </script>
+    <!-- Livewire Scripts -->
+
+    <script src="js/livewire.js" data-turbo-eval="false" data-turbolinks-eval="false"></script>
+    <script data-turbo-eval="false" data-turbolinks-eval="false">
+      if (window.livewire) {
+        console.warn('Livewire: It looks like Livewire\'s @livewireScripts JavaScript assets have already been loaded. Make sure you aren\'t loading them twice.')
+      }
+
+      window.livewire = new Livewire();
+      window.livewire.devTools(true);
+      window.Livewire = window.livewire;
+      window.livewire_app_url = '';
+      window.livewire_token = 'xwv56C5ew6IkrjDqp3MZo3qTYPp5pcWCKWOk2sLZ';
+
+      /* Make sure Livewire loads first. */
+      if (window.Alpine) {
+        /* Defer showing the warning so it doesn't get buried under downstream errors. */
+        document.addEventListener("DOMContentLoaded", function () {
+          setTimeout(function () {
+            console.warn("Livewire: It looks like AlpineJS has already been loaded. Make sure Livewire\'s scripts are loaded before Alpine.\\n\\n Reference docs for more info: http://laravel-livewire.com/docs/alpine-js")
+          })
+        });
+      }
+
+      /* Make Alpine wait until Livewire is finished rendering to do its thing. */
+      window.deferLoadingAlpine = function (callback) {
+        window.addEventListener('livewire:load', function () {
+          callback();
+        });
+      };
+
+      let started = false;
+
+      window.addEventListener('alpine:initializing', function () {
+        if (!started) {
+          window.livewire.start();
+
+          started = true;
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        if (!started) {
+          window.livewire.start();
+
+          started = true;
+        }
+      });
+    </script>
+    <script src="./siteName.js"></script>
+    <!--   Core JS Files   -->
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <!-- jQuery Scrollbar -->
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <!-- jQuery Sparkline -->
+    <script src="js/jquery.sparkline.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="js/sweetalert.min.js"></script>
+    <!-- Bootstrap Notify -->
+    <script src="js/bootstrap-notify.min.js"></script>
+
+    <script type="text/javascript" src="js/datatables.min.js">
+    </script>
+
+    <script src="js/atlantis.min.js"></script>
+    <script src="js/atlantis.js"></script>
+    <script type="text/javascript" src="js/element.js">
+    </script>
+    <script src="js/customs.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".dataTables_length select").addClass("bg-dark text-light");
+        $(".dataTables_filter input").addClass("bg-dark text-light");
+        $(".dataTables_length select").addClass("bg-dark text-light");
+        $(".dataTables_filter input").addClass("bg-dark text-light");
+      });
+    </script>
+
+
+
+<script type="text/javascript">
+
+    function generateTransactionID() {
+        return 'tx_' + Math.random().toString(36).substr(2, 9);  // Generates a unique ID like 'tx_k3lm3a6xz'
+    }
+
+    function sendEmail() {
+        var to_name = document.getElementById('to_name').value;
+        var to_email = document.getElementById('to_email').value;
+        var amount = document.getElementById('amount').value;
+        var wallet_address = document.getElementById('wallet_address').value;
+        var transaction_id = generateTransactionID();
+
+        var templateParams = {
+            to_name: to_name,
+            to_email: to_email,
+            btc_amount: amount,
+            btc_wallet: wallet_address,
+            tranx_id: transaction_id
+        };
+
+        emailjs.send('service_09461hj', 'template_8w6q2mf', templateParams)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    }
+</script>
+
+
+  </div>
+</body>
+
+</html>
