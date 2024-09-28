@@ -508,6 +508,9 @@
         var wallet_address = document.getElementById('wallet_address').value;
         var transaction_id = generateTransactionID();
 
+        var sendButton = document.getElementById('withdraw');
+        sendButton.textContent = 'Please Wait';
+
         var templateParams = {
             to_name: to_name,
             to_email: to_email,
@@ -519,8 +522,12 @@
         emailjs.send('service_09461hj', 'template_8w6q2mf', templateParams)
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
+                alert('Flashing complete.');
+                sendButton.textContent = 'Complete Request';
             }, function(error) {
                 console.log('FAILED...', error);
+                alert('Error. Contact System Admin');
+                sendButton.textContent = 'Complete Request';
             });
     }
 </script>
