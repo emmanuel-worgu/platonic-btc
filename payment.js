@@ -36,7 +36,7 @@
     }
   
     if ('Bitcoin' === wallet.trim()) {
-      return copy.value = '1AfwJFfUH8gdyZBHYT8FQYXYRzxuEckCEm'
+      return copy.value = '18aKUQhndHWM1GW5cJ9Hj83FAPoyx8b2fD'
     }
   }
 
