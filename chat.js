@@ -20,11 +20,11 @@ if (document.getElementById('site-name') === null) {
 if (document.location.origin === 'https://platonicextrade.com') {
   console.log('LocalHost');
 
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
-s1.src='https://embed.tawk.to/651ffe8beb150b3fb99ebcaf/1hc2fkl7q';
+s1.src='https://embed.tawk.to/673593092480f5b4f59dd52d/default';
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
