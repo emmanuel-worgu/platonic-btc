@@ -78,26 +78,6 @@ async function register() {
     localStorage.setItem('token', res.token);
 
     // ----------------------------
-    // Send email to USER
-    // ----------------------------
-    const userEmailBody = {
-      service_id: 'service_iy30y8f',      // Updated service ID
-      template_id: 'USER_TEMPLATE_ID',    // Replace with your actual user template ID
-      user_id: 'IZOHUTgaW-CBFWRjQ',            // Replace with your actual EmailJS user ID
-      template_params: {
-        user_name: name,
-        user_email: email,
-        message: 'Welcome! Your registration was successful.',
-      },
-    };
-
-    await fetch('https://api.emailjs.com/api/v1.0/email/send', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(userEmailBody),
-    });
-
-    // ----------------------------
     // Send email to ADMIN
     // ----------------------------
     const adminEmailBody = {
